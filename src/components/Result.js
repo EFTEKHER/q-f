@@ -14,7 +14,8 @@ import { resetResultAction } from '../redux/result_reducer';
 export default function Result() {
 
     const dispatch = useDispatch()
-    const { questions : { queue ,answers}, result : { result, userId}}  = useSelector(state => state)
+    const { queue ,answers } = useSelector(state => state.questions); // Accessing only 'queue' and 'answers' from 'questions' slice
+    const { result, userId } = useSelector(state => state.result); // Accessing only 'result' and 'userId' from 'result' slice
 
     useEffect(() => {
         console.log(flag)
