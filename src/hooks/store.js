@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 /** call reducers */
-import questionReducer from './question_reducer';
-import resultReducer from './result_reducer';
+import questionReducer from './questionReducer';
+import resultReducer from './resultReducer';
 
 const rootReducer = combineReducers({
     questions : questionReducer,
