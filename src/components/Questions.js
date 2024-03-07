@@ -17,7 +17,7 @@ export default function Questions({ onChecked }) {
 
     useEffect(() => {
         dispatch(updateResult({ trace, checked }));
-    }, [checked]);
+    }, [checked,dispatch,trace]);
 
     function onSelect(i) {
         onChecked(i);
