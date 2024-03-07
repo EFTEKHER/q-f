@@ -48,7 +48,7 @@ export default function Questions({ onChecked }) {
                         />
 
                         <label className='text-primary' htmlFor={`q${i}-option`}>{q}</label>
-                        <div className={`check ${result[trace] === i ? 'checked' : ''}`}></div>
+                        <div className={`check ${result[trace] == i ? 'checked' : ''}`}></div>
                     </li>
                 ))
             }
